@@ -9,22 +9,23 @@ Day3 Network Engineer
 3.1.g Gateway of Last Resort
 
 3.2 Determine how a router makes a forwarding decision by default
-3.3
-3.4
-3.5
+3.2.a Longest prefix match
+3.2.b Prefix
+3.2.c Routing Protocol Metric
 
+3.3 Configure and verify IPv4 and IPv6 Static Routing
+3.3.a Default Route
+3.3.b Network Route
+3.3.c Host Route
+3.3.d Floating Static
 
+3.4 Configure and verify Single Area OSPFv2
+3.4.a Neighboar Adjacencies
+3.4.b Point-To-Point
+3.4.c Broadcast (DR/BDR selection)
+3.4.d Router ID
 
-
-
-
-
-
-
-
-
-
-
+3.5 Describe the purpose, functions, and concepts of first hop redundancy protocols
 
 Task1: Review of Routing FUndamentals.
 rule: ping dikit, no dikit, no ping
