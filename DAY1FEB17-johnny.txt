@@ -280,7 +280,7 @@ configure terminal
 voice service voip
 ip address trusted list
 ipv4 0.0.0.0 0.0.0.0
-exit
+end
 
 !OUTGOING CALL FROM CUCM TO OTHER CUCM.
 configure terminal
@@ -348,6 +348,7 @@ dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
  codec g711ULAW
+end
 
 TASK3***TASK3***TASK3***
 TASK3***TASK3***TASK3***
