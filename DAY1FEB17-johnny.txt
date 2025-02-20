@@ -92,7 +92,7 @@ Int Range fa0/10-12
  channel-protocol Lacp
  do sh etherchannel summary
  do sh int po1 | inc BW
-
+end
 
 !DHCP: DYNAMIC HOST CONFIGURATION PROTOCOL
 !!!DAPAT 21 UNDER SCORE ANG NA EDIT MO  ( LINE 72 to 99 PASTE TO COREBABA SWITCH )
@@ -200,8 +200,8 @@ config t
       exec-timeout 0 0
    Int Fa 0/0
      no shutdown
-	 ip add 10.32.100.8 255.255.255.0 
-	 end
+     ip add 10.32.100.8 255.255.255.0
+end
    
 !!!CUCM ANALOG PHONES CONFIG
 configure terminal
@@ -249,13 +249,13 @@ ephone-dn 8
    number 3299
 ephone-dn 10
  number 3298
-Ephone 1
-  Mac-address dca5.f43f.3b7f
+Ephone 1 
+  Mac-address ccd8.c1fb.1045
   type 8945
   button 1:1 2:2 3:3 4:9
   restart
 Ephone 2
-  Mac-address ccd8.c1fb.1045
+  Mac-address dca5.f43f.3b7f
   type 8945
   button 1:5 2:6 3:7 4:10
   restart  
