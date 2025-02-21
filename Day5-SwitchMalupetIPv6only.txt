@@ -150,7 +150,7 @@ How to jailBreak forgotten Password:
 
 !@@@CORE SWITCH SA TAAS
 config t
-   hostname COREtaas_
+   hostname COREtaas-32
    enable secret pass
    service password-encryption
    no logging console
@@ -165,19 +165,19 @@ config t
       exec-timeout 0 0
    Int Vlan 1
      no shutdown
-	 ip add 10._.1.2 255.255.255.0
+	 ip add 10.32.1.2 255.255.255.0
 	 description MGMTDATA
    Int Vlan 10
      no shutdown
-	 ip add 10._.10.2 255.255.255.0
+	 ip add 10.32.10.2 255.255.255.0
 	 description WIRELESS
    Int Vlan 50
      no shutdown
-	 ip add 10._.50.2 255.255.255.0
+	 ip add 10.32.50.2 255.255.255.0
 	 description IPCCTV
    Int Vlan 100
      no shutdown
-	 ip add 10._.100.2 255.255.255.0
+	 ip add 10.32.100.2 255.255.255.0
 	 description VOICEVLAN
 
 !@@@LeafSwitchONLY
@@ -285,6 +285,7 @@ WonderWoman: 802.1w: rapidSTP
 "quickly,Brutally protect switches"
 SuperMan: 802.1s: MiSTP
 "Protect Many Switches at the same time!"
+X-Men: 802.1x Port Based Authentication
 
 TASK8: ACCESS PORTS VS TRUNK PORTS: lab mo sa exam.
 +
@@ -327,7 +328,7 @@ Task9.2: STP Port Roles: 802.1D protect switches slowly/gently 30s
 DesignatedPort/DP = fwd port of Root Bridge
 RootPort/RP = fwd port of non-root Bridge(1 only)
 AlternatePort/AP = blk port of nonRootPorts
-BackupPort = yuck yuck, suck urself. enter urself, self-service
+BackupPort = yuck yuck, suck urself. enter urself, self-service, sabotage
 
 how becomes RootPort = kanangKamay
 Cost >> Priority >> Number
